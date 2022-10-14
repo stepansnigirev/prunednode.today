@@ -35,9 +35,8 @@ You will need to update it every time you create a new snapshot and reload nginx
 	- zip the content of the folder to a `snapshot<date>.zip`
 	- create a `snapshot<date>.txt` with sha256 of the file
 	- move it to the `/var/www/html/` folder
-2. Sign the `snapshot<date>.txt` with your pgp key using `gpg --output snapshot<date>.signed.txt --clearsign snapshot<date>.txt`
-3. Copy it over to `/var/www/html/` folder
-4. Update:
+2. Sign the `snapshot<date>.txt` with your pgp key using `gpg --output snapshot<date>.signed.txt --clearsign snapshot<date>.txt` and place it next to the snapshot zip file
+3. Update:
 	- nginx config file to use new snapshot for redirects
 	- `/var/www/html/latest.txt` so it contains the name of the latest snapshot zip file
 	- `/var/www/html/index.html` so it has correct date in the description
