@@ -5,7 +5,7 @@ A website and sync script for prunednode.today.
 ## How to set up:
 
 - download and install latest bitcoin core from [bitcoincore.org](https://bitcoincore.org/en/download/)
-- copy [bitcoin.conf](./bitcoin.conf) to your `~/.bitcoin` folder (create if not present) - it is set up to use `prune=1000` flag.
+- copy [bitcoin.conf](./bitcoin.conf) to your `~/.bitcoin` folder (create if not present) - it is set up to use `prune=550` flag.
 - start `bitcoind --daemon` and wait for full sync
 - install `nginx` and copy content of the [`html`](./html/) folder to `/var/www/html/`
 - create the first snapshot (see below)
