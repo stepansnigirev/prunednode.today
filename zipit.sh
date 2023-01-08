@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 bitcoin-cli stop
 now=$(date +"%y%m%d")
 sleep 1m
